@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillOLogy</title>
+    <link rel="stylesheet" href="styleee2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="slider()">
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo2">
+                    <a href="index(vaishu).html"><img src="logo.png"></a>
+                </div>
+                <nav2>
+                    <div class="nav-links2" id="navLinks2">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <a href="INDEX.html">Home</a>
+                            <a href="COURSES.html">Courses</a>
+                            <a href="aboutUs(khushi).html">About Us</a>>
+                            <a href="https://z-p42.www.instagram.com/skill_o_logy/?hl=en-gb">Contact Us</a>
+                            <a href="https://forms.gle/TvnxBPHhFAY9fy4t6">Enroll Now →</a>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"> </i>
+                </nav2>
+        </header>
+        <!-- BANNER -->
+        <div class="banner2">
+            <div class="slider">
+                <img src="17.png" id="slideImg">
+            </div>
+            <!-- <div class="overlay"> -->
+                <!-- <div class="content2">
+                    <h1>WE</h1>
+                </div>
+                <div class="we">
+                <p>>>♡</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="value2">
+            <h1>ABOUT US</h1>
+            <div class="line"></div>
+        </div>
+            <div class="text4">
+                <p>As the fastest growing economy today,India is home to a fifth of the world's youth.Half of its population of 1.3billion is below the age
+                of 25, and a quarter is below the age of 14.India’s young populationis itsmost valuable asset and most pressing challenge.In a
+                Survey conducted collaboratetively by World Economic Forum and the Observer Research Foundation it was found that young
+                Indians are ambitious and how greater autonomy in their career decisions.They acknowledge changing skillrequirements and are
+                eager to pursue higher education,undergo addition all training and enrol in skill development programmes.At the same time, various
+                factors are blocking their ambitions and preventing them from adapting effectively to the changing nature of work. Budgeting
+                ,Pricing and Emplyoment are some factor which preventing them and by introducing Affordability and Employment in
+                SKILL_O_LOGYwe are half way done.
+               </p>
+            </div>
+
+            <!-- FOOTER -->
+            <section class="footer2">
+                <div class="line2"></div>
+                <h4><i class="fa fa-heart-o"></i> Connect With US On <i class="fa fa-heart-o"></i></h4>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                   <a href="https://www.instagram.com/skill_o_logy/?hl=af"><i class="fa fa-instagram"></i></a>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </section>
+<style>
+  .footer2{
+    width: 100%;
+    position: absolute;
+    top: 300%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer2 h4{
+    margin-bottom: 25px;
+    margin-top: 70px;
+    color: rgb(7, 7, 7);
+    font-weight: 600;
+  }
+  .icons .fa{
+     color: #f33a2d;
+     margin: 0 13px;
+     cursor: pointer;
+     padding: 0px 0;
+  }
+  .line2{
+    width: 100%;
+    height: 2px;
+    background: rgb(49, 49, 51);
+    margin: -40px auto;
+    border-radius: 10px 20px;
+  }
+</style>
+            <!-- JAVASCRIPT -->
+       <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "18.png",
+            "17.png"
+        );
+
+        var len = images.length;
+        var i=0;
+        
+        function slider(){
+            if(i > len-1){
+                i=0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',1200)
+        }
+       </script>
+
+
+</body>
+</html>

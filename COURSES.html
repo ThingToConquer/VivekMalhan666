@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course slider</title>
+    <link rel="stylesheet" href="COURSES.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swiper css -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.css" rel="stylesheet"></link>
+</head>
+<body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <div class="logo2">
+                    <a href="index(vaishu).html"><img src="logo.png"></a>
+                </div>
+                <nav2>
+                    <div class="nav-links2" id="navLinks2">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <a href="INDEX.html">Home</a>
+                            <a href="COURSES.html">Courses</a>
+                            <a href="aboutUs(khushi).html">About Us</a>>
+                            <a href="https://z-p42.www.instagram.com/skill_o_logy/?hl=en-gb">Contact Us</a>
+                            <a href="https://forms.gle/TvnxBPHhFAY9fy4t6">Enroll Now →</a>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"> </i>
+                </nav2>
+        </header>
+    <div class="slider-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <spam class="overlay"></spam>
+
+                        <div class="card-image">
+                            <img src="rcc.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">RCC</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur 
+                            asperiores molestias aut fugiat maiores maxime<br>ab repudiandae! Voluptatum, 
+                            voluptas dolorem.</p>
+                            <a href="soon.html"><button class="button">Register</button></a>
+                    </div>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <spam class="overlay"></spam>
+
+                        <div class="card-image">
+                            <img src="horse.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">HORSE RIDING</h2>
+                        <p class="description">A clear and useable guide for beginning riders on the basics of horseback riding and horse handling. With this course </p>
+                            <a href="soon.html"><button class="button">Register</button></a>
+                    </div>
+                </div>
+
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <spam class="overlay"></spam>
+
+                        <div class="card-image">
+                            <img src="guitar.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">GUITAR</h2>
+                        <p class="description">Are you a enthusiast who always wants to learn ? We’ve got you covered! With this course, you will learn all fundamentals of guitar in fun and joy manner.</p>
+                         <a href="https://forms.gle/TvnxBPHhFAY9fy4t6"><button class="button">Register</button></a> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@8.4.6/swiper-bundle.min.js
+"></script>
+<!-- <script src="COURSES.js"></script> -->
+<script>
+    var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>
+
+ <!-- FOOTER -->
+ <section class="footer">
+    <div class="line2"></div>
+    <h4><i class="fa fa-heart-o"></i> Connect With US On <i class="fa fa-heart-o"></i></h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+       <a href="https://www.instagram.com/skill_o_logy/?hl=af"><i class="fa fa-instagram"></i></a>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
+</body>
+</html>
